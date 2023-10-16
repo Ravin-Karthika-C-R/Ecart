@@ -1,0 +1,41 @@
+<body class="">
+    <div class="container  w-50 text-dark mb-5">
+    <form  action="" class="w-100 mt-5">
+        <h1 class="mb-3 bg-dark text-white text-center">Edit Products</h1>
+            <label class="mt-2" for="">Id  </label>
+            <input [(ngModel)]="pdata.id" type="number"  name="ids" id="ids" class="form-control mt-1">
+
+        <label class="mt-3" for="">Product Name  </label>
+        <input [(ngModel)]="pdata.productName" type="text" name="pdtname" id="pdtname" class="form-control mt-1">
+        
+        <label class="mt-2" for="">Category Id  </label>
+        <input [(ngModel)]="pdata.categoryId" type="number" name="cid" id="cid" class="form-control mt-1">
+       
+        <label class="mt-2" for="">Description  </label>
+        <input [(ngModel)]="pdata.description" type="text" name="description" id="description" class="form-control mt-1">
+        
+        <label class="mt-2" for="">Price  </label>
+        <input [(ngModel)]="pdata.price" type="number" name="price" id="price" class="form-control mt-1">
+       
+        <label class="mt-2" for="">Is Available  </label>
+        <input [(ngModel)]="pdata.is_available" type="text" name="isa" id="isa" class="form-control mt-1">
+       
+        <label class="mt-2" for="">Upload Product Image : </label>
+        <input [(ngModel)]="pdata.product_img" type="text" name="upi" id="upi" class="form-control mt-1">
+        
+        <label class="mt-2" for="">Rating  </label>
+        <input [(ngModel)]="pdata.rating" type="number" name="rating" id="rating" class="form-control mt-1">
+        
+        <label class="mt-2" for="">Review  </label>
+        <input [(ngModel)]="pdata.review" type="text" name="review" id="review" class="form-control mt-1">
+        
+        <label class="mt-2" for="">Item  </label>
+        <input [(ngModel)]="pdata.item" type="text" name="item" id="item" class="form-control mt-1">
+        
+        <label class="mt-2" for="">Warrenty  </label>
+        <input [(ngModel)]="pdata.warrenty" type="number" name="warrenty" id="warrenty" class="form-control mt-1">
+        
+        <button (click)="update()" class="btn btn-warning p-2 mt-5 w-50 mb-5 text-center">Update</button>
+    </form>
+</div>
+</body>

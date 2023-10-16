@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container px-4 px-lg-5">
+        <div>
+           <a href="">
+            <img src="/assets/images/logo-removebg.png" alt="" height="70" width="120">
+        </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                
+                <li class="nav-item text-black"><a class="nav-link" href="products/add-product">Add products</a></li>
+                <div class="d-flex text-center ms-3" role="search">
+                    <!-- <input [(ngModel)]="searchData" (keyup)="accessData($event)" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search1"> -->
+                    <input [(ngModel)]="searchData" (keyup)="accessData($event)" type="text" placeholder="search" name="searchbar" id="sb" aria-label="Search" class="form-control me-2">
+                    <!-- <i class="fa fa-search mt-2" ></i> -->
+                </div>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+                <button class="btn btn-dark ms-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                            <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>

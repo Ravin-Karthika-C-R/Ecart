@@ -1,0 +1,40 @@
+body{
+    /* background-color: rgba(0, 0, 0, 0.197); */
+    /* background-color: rgb(53, 240, 212); */
+    background-color: black;
+}
+.main{
+    /* background-image: url('https://mir-s3-cdn-cf.behance.net/projects/404/93aa5f180042523.Y3JvcCwxMDI0LDgwMCwwLDc4.jpg');    */
+    /* background-image: url('https://us.123rf.com/450wm/vacharapong/vacharapong2009/vacharapong200900074/161124062-bangkok-thailand-dec-24-2019-nike-sneaker-or-running-or-sport-shoes-on-colorful-floor.jpg?ver=6');
+    background-repeat: no-repeat;
+    background-size: auto; */
+    /* justify-content: center; */
+    width: 100%;
+    background-color: black;
+    /* background-color: rgb(250, 215, 135); */
+
+    /* background-color: rgb(53, 240, 212); */
+
+}
+#card{
+    /* width: 120px;
+    height: 180px; */
+    align-items: center;
+    /* margin-left: 5px;
+    margin-top: 10%; */
+    
+}
+/* @media screen and (max-width: 700px) {
+    #card {
+        align-items: center;
+        width: 100%;
+        margin-right: 20%;
+        margin-top: 10%;
+    }
+    } */
+    .card{
+        background-color: rgba(240, 248, 255, 0.67);
+    }
+    /* .btn{
+        width: 20%;
+    } */

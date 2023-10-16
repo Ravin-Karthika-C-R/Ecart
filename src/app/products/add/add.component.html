@@ -1,0 +1,74 @@
+<body class="">
+    <div class="container w-50 text-dark mb-5">
+    <form (ngSubmit)="addNewProduct()" [formGroup]="addForm" action="" class="w-100 mt-5">
+        <h1 class="mb-3 bg-dark text-white text-center">Add Products</h1>
+            <label for="">Id : </label>
+            <input type="number" formControlName="id" name="ids" id="ids" class="form-control">
+            <div *ngIf="this.addForm.get('id')?.errors && this.addForm.get('id')?.touched">
+                <p class="text-danger">Accept only numbers</p>
+            </div>
+
+        <label for="">Product Name : </label>
+        <input formControlName="productName" type="text" name="pdtname" id="pdtname" class="form-control">
+        <div *ngIf="this.addForm.get('productName')?.errors && this.addForm.get('productName')?.touched">
+            <p class="text-danger">Accept only characters </p>
+        </div>
+
+        <label for="">Category Id : </label>
+        <input formControlName="categoryId" type="number" name="cid" id="cid" class="form-control">
+        <div *ngIf="this.addForm.get('categoryId')?.errors && this.addForm.get('categoryId')?.touched">
+            <p class="text-danger">Accept only numbers</p>
+        </div>
+
+        <label for="">Description : </label>
+        <input formControlName="description" type="text" name="description" id="description" class="form-control">
+        <div *ngIf="this.addForm.get('description')?.errors && this.addForm.get('description')?.touched">
+            <p class="text-danger">Accept only characters </p>
+        </div>
+
+        <label for="">Price : </label>
+        <input formControlName="price" type="number" name="price" id="price" class="form-control">
+        <div *ngIf="this.addForm.get('price')?.errors && this.addForm.get('price')?.touched">
+            <p class="text-danger">Accept only numbers</p>
+        </div>
+
+        <label for="">Is Available : </label>
+        <input formControlName="is_available" type="text" name="isa" id="isa" class="form-control">
+        <div *ngIf="this.addForm.get('is_available')?.errors && this.addForm.get('is_available')?.touched">
+            <p class="text-danger">Accept only characters </p>
+        </div>
+
+        <label for="">Upload Product Image : </label>
+        <input formControlName="product_img" type="text" name="upi" id="upi" class="form-control">
+        <div *ngIf="this.addForm.get('product_img')?.errors && this.addForm.get('product_img')?.touched">
+            <p class="text-danger">Accept only characters </p>
+        </div>
+
+        <label for="">Rating : </label>
+        <input formControlName="rating" type="number" name="rating" id="rating" class="form-control">
+        <div *ngIf="this.addForm.get('rating')?.errors && this.addForm.get('rating')?.touched">
+            <p class="text-danger">Accept only numbers</p>
+        </div>
+
+        <label for="">Review : </label>
+        <input formControlName="review" type="text" name="review" id="review" class="form-control">
+        <div *ngIf="this.addForm.get('review')?.errors && this.addForm.get('review')?.touched">
+            <p class="text-danger">Accept only numbers</p>
+        </div>
+
+        <label for="">Item : </label>
+        <input formControlName="item" type="text" name="item" id="item" class="form-control">
+        <div *ngIf="this.addForm.get('item')?.errors && this.addForm.get('item')?.touched">
+            <p class="text-danger">Accept only characters </p>
+        </div>
+
+        <label for="">Warrenty : </label>
+        <input formControlName="warrenty" type="number" name="warrenty" id="warrenty" class="form-control">
+        <div *ngIf="this.addForm.get('warrenty')?.errors && this.addForm.get('warrenty')?.touched">
+            <p class="text-danger">Accept only numbers</p>
+        </div>
+
+        <button class="btn btn-warning p-2 mt-5 w-50 mb-5 text-center">Add</button>
+    </form>
+</div>
+</body>

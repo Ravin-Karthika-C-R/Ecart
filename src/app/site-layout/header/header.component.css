@@ -1,0 +1,15 @@
+.nav-item:hover{
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: aliceblue;
+}
+.nav-item{
+    color: black;
+    border-radius: 1%;
+    background-color: rgb(208, 129, 19);
+        
+}
+.d-flex{
+    align-items: center;
+    justify-content: center;
+}
